@@ -1,0 +1,84 @@
+body::after {
+    background: white;
+    content: "";
+    position: fixed;
+    top: 260px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#page-search-results {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+#page-search-results header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 48px;
+}
+
+#page-search-results header a {
+	align-items: center;
+	color: var(--title-color);
+	display: flex;
+	font-weight: bold;
+}
+
+#page-search-results header a span {
+	background-image: url("../assets/arrow-left.svg");
+	display: flex;
+	margin-right: 16px;
+	width: 20px;
+	height: 24px;
+}
+
+main {
+	margin-top: 48px;
+}
+
+main h4 {
+	font-weight: normal;
+	font-family: Roboto, sans-serif;
+	margin-bottom: 32px;
+}
+
+main .cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin: 48px;
+}
+
+main .card img {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+	height: 150px;
+	width: 100%;
+}
+
+main .card h1 {
+	color: #322153;
+	font-size: 36px;
+	line-height: 41px;
+	margin-top: 32px;
+}
+
+main .card h3 {
+	color: var(--primary-color);
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 34px;
+	margin: 24px 0;
+}
+
+main .card p {
+	color: #6c6c80;
+	font-size: 16px;
+	line-height: 26px;
+}
