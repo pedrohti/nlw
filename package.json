@@ -1,23 +1,24 @@
 {
-  "name": "NLW",
-  "version": "1.0.0",
-  "description": "Site desenvolvido durante a [NextLevelWeek](https://nextlevelweek.com) pela [RocketSeat](https://github.com/Rocketseat).",
-  "main": "server.js",
-  "scripts": {
-    "dev": "nodemon src/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pedrohti/nlw.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pedrohti/nlw/issues"
-  },
-  "homepage": "https://github.com/pedrohti/nlw#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+	"name": "NLW",
+	"version": "1.0.0",
+	"description": "Site desenvolvido durante a [NextLevelWeek](https://nextlevelweek.com) pela [RocketSeat](https://github.com/Rocketseat).",
+	"main": "src/server.js",
+	"scripts": {
+		"start": "node src/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pedrohti/nlw.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/pedrohti/nlw/issues"
+	},
+	"homepage": "https://github.com/pedrohti/nlw#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"nunjucks": "^3.2.1"
+	}
 }
