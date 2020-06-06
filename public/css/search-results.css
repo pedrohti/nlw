@@ -2,7 +2,7 @@ body::after {
     background: white;
     content: "";
     position: fixed;
-    top: 260px;
+    top: 290px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -38,7 +38,8 @@ body::after {
 }
 
 main {
-	margin-top: 48px;
+	margin: 48px;
+
 }
 
 main h4 {
