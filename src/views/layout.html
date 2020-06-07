@@ -3,21 +3,22 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Ecoleta</title>
+		{% block title %} <title>Ecoleta</title> {% endblock title %}
 
-		<link
-			href="https://fonts.googleapis.com/css2?family=roboto:wght@300;700&family=ubuntu:wght@700&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=roboto:wght@300;700&family=ubuntu:wght@700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/colors.css"/>
 		<link rel="stylesheet" href="./css/reset.css"/>
 		<link rel="stylesheet" href="./css/main.css"/>
 
-		{% block styles %}{% endblock styles %}
-
+		{% block styles %} {% endblock styles %}
 
 		<link rel="stylesheet" href="./css/responsive.css"/>
 	</head>
 	<body>
-		<div id="page-home"></body>
+		<div id="{{ pageId }}">
+			{% block content %} {% endblock content %}
+		</div>
+			{% block modal %} {% endblock modal %}
+			{% block scripts %} {% endblock scripts %}
+	</body>
 </html>

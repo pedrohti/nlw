@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 	return res.render("index.html");
 });
 app.get("/novoponto", (req, res) =>
-	res.sendFile(__dirname + "/views/create-point.html"),
+	res.render("create-point.html"),
 );
 app.get("/search", (req, res) => {
 	return res.render("search-results.html");
