@@ -49,6 +49,16 @@ app.get("/search", (req, res) => {
 	);
 });
 
+app.get("/allpoints", (req, res) => {
+	db.all(`SELECT * FROM places`, (err, rows) => {
+		if (err) {
+			return console.log(err);
+		}
+		const total = rows.length;
+		return res.render("search-results.html", { places: rows, total });
+	});
+});
+
 app.post("/savepoint", (req, res) => {
 	const body = req.body;
 	const sqlInsert = `INSERT INTO places (image, name, address, address2, state, city, items) VALUES (?, ?, ?, ?, ?, ?, ?);`;

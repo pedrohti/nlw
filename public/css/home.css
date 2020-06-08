@@ -52,7 +52,7 @@
 	margin-top: 24px;
 }
 
-#page-home main a {
+#page-home main a.search {
 	align-items: center;
 	background-color: var(--primary-color);
 	border-radius: 8px;
@@ -66,6 +66,15 @@
 
 #page-home main a:hover {
 	background-color: #2fb86e;
+}
+
+#page-home main a.listall {
+	color: var(--title-color);
+}
+
+#page-home main a.listall:hover {
+	background-color: var(--title-color);
+	color: var(--secondary-color);
 }
 
 #page-home main a span {
