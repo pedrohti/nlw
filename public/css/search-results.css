@@ -1,8 +1,13 @@
+body {
+	background-color: white;
+}
+
 body::after {
-    background: white;
-    content: "";
-    position: fixed;
-    top: 290px;
+    background: #f0f0f5;
+	content: "";
+	height: 16rem;
+    position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
